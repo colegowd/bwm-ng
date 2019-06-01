@@ -22,7 +22,6 @@ app.use('/api/v1/rentals', rentalRoutes);
 app.use('/api/v1/users', userRoutes);
 app.use('/api/v1/bookings', bookingRoutes);
 
-
 const PORT = process.env.PORT || 3001;
 
 app.listen(PORT, function(){
