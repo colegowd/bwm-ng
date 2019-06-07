@@ -11,6 +11,7 @@ import { RentalComponent } from './rental/rental.component';
 
 import { RentalModule } from './rental/rental.module';
 import { AuthModule } from './auth/auth.module';
+import { ManageModule } from './manage/manage.module';
 
 
 const routes: Routes = [
@@ -20,7 +21,7 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent    
+    HeaderComponent 
   ],
   imports: [
     RouterModule.forRoot(routes),
@@ -29,7 +30,8 @@ const routes: Routes = [
     AuthModule,
     NgbModule.forRoot(),
     ToastModule.forRoot(),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ManageModule
   ],
   providers: [],
   bootstrap: [AppComponent]
